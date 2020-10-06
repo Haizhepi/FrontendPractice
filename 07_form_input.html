@@ -9,11 +9,11 @@
     <form action="process.php">
         <div>
             <label for="name">Name</label>
-            <input type="text" name="" id="name" name="name">
+            <input type="text" name="" id="name" name="name" value="Haha">
         </div>
         <div>
             <label for="email">Email</label><br>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" placeholder="enter">
         </div>
         <div>
             <label for="message">Message</label><br>
@@ -23,12 +23,34 @@
             <label for="sex">Sex</label>
             <select name="sex" id="sex">            
                 <option value="other">Other</option>
+                <option value="male" selected>male</option>
+                <option value="female">female</option>
+
             </select>
         </div>
         <div>
             <label for="age">Age</label>
             <input type="number" name="age" id="age">
         </div>
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <input type="date" name="birthdate"  id="birthdate">
+        </div>
+        <div>
+            <label for="membership">Membershi</label>
+            <input type="radio" name="membership" value="simple" id="membership">Simple
+            <input type="radio" name="membership" value="standard" id="membership" checked>Standard
+            <input type="radio" name="membership" value="super" id="membership">Super
+        </div>
+        <div>
+            <label for="membership">I like</label>
+            <input type="checkbox" name="membership" value="simple" id="membership">Simple
+            <input type="checkbox" name="membership" value="standard" id="membership" checked>Standard
+            <input type="checkbox" name="membership" value="super" id="membership">Super
+        </div>
+        <input type="submit" value="submit">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
     </form>
     
 </body>
